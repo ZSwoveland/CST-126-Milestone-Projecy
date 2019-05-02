@@ -1,0 +1,44 @@
+<!-- <?php include(loginHandler.php); ?> -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type"text/css" href="styles.css">
+<title>My Blog page</title>
+</head>
+<body bgcolor = "#7d8491">
+<h4 align = "left"> <font color = "#FFFFFF">HobbyBlog</font></h4>
+<h2 align="left"><font color = "#FFFFFF">My Blog Page</font></h2>
+<form align = "center" action = "index.html" method = "Post">
+<h5 align = "right">This box is to search just type in the title of the post</h5>
+<h5 align = "right"><input  type = "text" name = "searchBox"></h5>
+<h5 align = "right"><button name = "searchPost" value = "Search">Search</button></h5>
+</form>
+<h5 align = "right"> <font color = "#FFFFFF"><a href = "home.html" name = "home">Home</a></font></h5>
+<h5 align = "right"> <font color = "#FFFFFF"><a href = "Login.html" name = "login">Login</a></font></h5>
+<h5 align = "right"> <font color = "#FFFFFF"><a href = "register.html" name = "Register">Register</a></font></h5>
+<h5 align = "right"> <font color = "#FFFFFF"><a href = "logout.html" name = "Logout">Logout</a></font></h5>
+<h5 align = "right"> <font color = "#FFFFFF"><a href = "myAdmin.html" name = "MyAdmin">My Admin</a></font></h5>
+<h5 align = "right"> <font color = "#FFFFFF"><a href = "search.html" name = "Search">Search</a></font></h5>
+	
+	<?php echo "Weclome"; echo $UserName; include(posts.php);?>
+	<form align = "center" action = "index.html" method = "Post">
+	Insert Old Title Exact capilaziation and spelling:
+	<input type = "text" name = "oldTitle"><br>
+	Insert New Title:
+	<input type = "text" name = "edTitle">
+	<button align = "left" name = "editPost" value = "Ed">Edit</button><br>
+	Insert Title to Post to delete that Posts Exact capilaziation and spelling:
+	<input type = "text" name = "delTitle">
+	<button align = "left" name ="deletePost" value ="Del">Delete</button><br>
+	<!-- <?php CommentSQL = "SELECT * FROM `posts2";if(!mysqli_query($CommentSql)){
+                    die(' Error loading posts');
+                }
+                ?>
+	 -->
+	
+	</form>
+	
+	
+</body>
+</html>
